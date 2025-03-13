@@ -1,0 +1,34 @@
+* {
+    outline: solid black 1px;
+}
+
+.main {
+    display: grid;
+    grid-template: 100px 50px 100px 100px 100px / 100px 100px 100px 100px;
+    grid-template-areas: 
+        "title title title title" 
+        "actions places places places"
+        "todo places places places"
+        "itinerary itinerary itinerary itinerary"
+        "itinerary itinerary itinerary itinerary";
+}
+
+.title {
+    grid-area: title;
+}
+
+.actions {
+    grid-area: actions;
+}
+
+.todo {
+    grid-area: todo;
+}
+
+.places {
+    grid-area: places;
+}
+
+.itinerary {
+    grid-area: itinerary;
+}
