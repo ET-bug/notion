@@ -1,15 +1,11 @@
-* {
-    outline: solid black 1px;
-}
 
 .main {
     display: grid;
-    grid-template: 100px 50px 100px 100px 100px / 100px 100px 100px 100px;
+    grid-template: 15vh 20vh 25vh 40vh / 22.5vw 22.5vw 22.5vw 22.5vw;
     grid-template-areas: 
         "title title title title" 
         "actions places places places"
         "todo places places places"
-        "itinerary itinerary itinerary itinerary"
         "itinerary itinerary itinerary itinerary";
 }
 
@@ -19,6 +15,51 @@
 
 .actions {
     grid-area: actions;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.new-place-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:darkgrey;
+    border-radius: 100px;
+    border: solid darkgrey 1px;
+}
+
+.new-itinerary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:darkgrey;
+    border-radius: 100px;
+    border: solid darkgrey 1px;
+}
+
+
+
+.place-icon-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 1rem;
+    height: 1rem;
+    color:darkgrey
+}
+
+.map-icon-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
 }
 
 .todo {
